@@ -1,0 +1,23 @@
+<ul>
+  <li *ngFor='let item of week; let i = index'>{{i}}:{{item}}</li>
+</ul>
+
+<ul>
+  <li *ngFor='let item of users'>
+    name:{{item.name}}
+    sex:{{item.sex}}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor='let item of num'>{{item}}分</li>
+</ul>
+
+{{users | json}}
+<br>
+
+{{date | date:'yyyy年mm月dd日'}}
+<br>
+{{date}}
+
+<p>{{ 'foo' | reverse }}</p> <!-- Output: "oof" -->

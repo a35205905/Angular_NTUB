@@ -1,0 +1,14 @@
+<h1 *ngIf="abc">abcabc</h1>
+
+<button (click) = "change()">change</button>
+<br>
+
+<input type="number" [(ngModel)] = "score">
+
+<div *ngIf = "score >= 60">
+  好棒
+</div>
+
+<div *ngIf = "score < 60">
+  好笨
+</div>
